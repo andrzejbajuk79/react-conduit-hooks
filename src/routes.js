@@ -10,6 +10,7 @@ import YourFeed from './pages/YourFeed/YourFeed'
 import CreateArticle from './pages/CreateArticle/CreateArticle'
 import EditArticle from './pages/EditArticle/EditArticle'
 import Settings from './pages/Settings/Settings'
+import UserProfile from './pages/UserProfile'
 
 let AsyncArticle
 //perwszy sposob LAZY COMP poprzez HOC
@@ -23,6 +24,8 @@ const Routes = () => {
  return (
   <Switch>
    <Route path="/" component={GlobalFeed} exact />
+   <Route path="/profiles/:slug" component={UserProfile} />
+   <Route path="/profiles/:slug/favourites" component={UserProfile} />
    <Route path="/settings" component={Settings} exact />
    <Route path="/article/new" component={CreateArticle} />
    <Route path="/article/:slug/edit" component={EditArticle} />

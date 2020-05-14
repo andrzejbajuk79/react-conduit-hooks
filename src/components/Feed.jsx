@@ -11,7 +11,7 @@ export const Feed = ({articles}) => {
    {articles.map((article, index) => (
     <div className="article-preview" key={index}>
      <div className="article-meta">
-      <Link to={`/profile/${article.author.username}`}>
+      <Link to={`/profiles/${article.author.username}`}>
        <img src={article.author.image} alt="" />
       </Link>
       <div className="info">
