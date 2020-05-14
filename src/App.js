@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter as Router} from 'react-router-dom'
+import {CurrentUserProvider} from './context/currentUser'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Routes from './routes'
+import TopBar from './components/TopBar'
+import CurrentUserChecker from './components/CurrentUserChecker'
+
+const App = () => {
+ return (
+  <CurrentUserProvider>
+   {' '}
+   {/* tu sprawdzamy usera */}
+   <CurrentUserChecker>
+    <Router>
+     <TopBar />
+     <Routes />
+    </Router>
+   </CurrentUserChecker>
+  </CurrentUserProvider>
+ )
 }
 
-export default App;
+export default App
