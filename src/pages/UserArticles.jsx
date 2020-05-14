@@ -24,13 +24,15 @@ const UserArticles = ({url, username, location}) => {
  const {offset, currentPage} = getPaginator(location.search)
  const apiUrl = getApiUrl({username, offset, isFavourite})
  const [{response, error, isLoading}, doFetch] = useFetch(apiUrl)
- console.log('apiurl', apiUrl)
+ // console.log('apiurl', apiUrl)
 
- console.log('response', response)
+ // console.log('response', response)
 
  useEffect(() => {
   doFetch()
- }, [doFetch])
+ }, [doFetch, isFavourite, currentPage])
+ // console.log('location', location)
+
  return (
   <div>
    {isLoading && <Loading />}
