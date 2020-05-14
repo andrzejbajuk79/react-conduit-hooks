@@ -23,7 +23,7 @@ export const Authentication = (props) => {
  const [{isLoading, response, error}, doFetch] = useFetch(apiUrl)
  const [, setToken] = useLocalStorage('token')
  //------------------z reducerem!!!
- const [currentUserState, dispatch] = useContext(CurrentUserContext)
+ const [, dispatch] = useContext(CurrentUserContext)
  //------------------ bez reducera!!!!
  // const [currentUserState, setCurrentUserState] = useContext(CurrentUserContext)
 

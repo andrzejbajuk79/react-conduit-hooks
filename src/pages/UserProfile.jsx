@@ -1,15 +1,16 @@
 import React, {useEffect} from 'react'
 import useFetch from '../hooks/useFetchHook'
 import {NavLink} from 'react-router-dom'
+import UserArticles from './UserArticles'
 
-const UserProfile = ({match}) => {
+const UserProfile = ({match, location}) => {
  const slug = match.params.slug
  const apiUrl = `/profiles/${slug}`
  const [{response}, doFetch] = useFetch(apiUrl)
 
  useEffect(() => {
   doFetch()
- }, [])
+ }, [doFetch])
  if (!response) {
   return null
  }
@@ -52,7 +53,11 @@ const UserProfile = ({match}) => {
         </li>
        </ul>
       </div>
-      UserArticles
+      <UserArticles
+       url={match.url}
+       username={response.profile.username}
+       location={location}
+      />
      </div>
     </div>
    </div>

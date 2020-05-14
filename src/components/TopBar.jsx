@@ -44,12 +44,6 @@ const TopBar = () => {
          &nbsp; {currentUserState.currentUser.username}
         </NavLink>
        </li>
-       <li className="nav-item">
-        <NavLink className="nav-link" to="/logout">
-         <i className="ion-log-out" />
-         Logout
-        </NavLink>
-       </li>
       </>
      )}
 

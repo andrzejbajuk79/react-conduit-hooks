@@ -14,7 +14,7 @@ const AddToFavourite = ({isFavorited, favoritesCount, articleSlug}) => {
  const newfavoritesCount = response
   ? response.article.favoritesCount
   : favoritesCount
- console.log('response', response)
+ // console.log('response', response)
 
  const buttonClasses = classNames({
   btn: true,

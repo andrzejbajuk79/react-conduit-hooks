@@ -1,4 +1,5 @@
 import {parse} from 'query-string'
+//liczba wynikow na stronie
 export const limit = 10
 
 export const getPaginator = (querySearch) => {
