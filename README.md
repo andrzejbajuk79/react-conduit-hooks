@@ -8,3 +8,4 @@ https://www.npmjs.com/package/query-string
 TORRENT: "React Hooks - Building Real Project From Scratch"
 
 pagination.js - classNames
+getPaginator.js
