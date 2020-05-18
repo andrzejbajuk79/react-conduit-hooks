@@ -9,7 +9,7 @@
 # Zawartość
  -pagination.js ,  getPaginator.js
  
- - **classNames
+ - **classNames**
  
 -PARAMS query parameters from STRING to OBJECT:query-string, 
 
