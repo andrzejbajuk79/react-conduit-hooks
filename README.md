@@ -7,11 +7,13 @@
 
 
 # Zawartość
- -pagination.js - classNames
+ -pagination.js ,  getPaginator.js
  
--getPaginator.js
+ - **classNames
+ 
+-PARAMS query parameters from STRING to OBJECT:query-string, 
 
--PARAMS query parameters from STRING to OBJECT:query-string, TagFeed.jsx,GlobalFedd,getPaginator
+TagFeed.jsx,GlobalFedd, **getPaginator**
 
 -https://www.npmjs.com/package/query-string
 
