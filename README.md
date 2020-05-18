@@ -12,3 +12,4 @@ https://www.npmjs.com/package/query-string
 
 
 ####Preview
+![sass-js-coding-test screenshot](https://github.com/andrzejbajuk79/react-conduit-hooks/blob/master/2020-05-18_09h25_48.png?raw=true)
