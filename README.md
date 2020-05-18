@@ -2,7 +2,7 @@
 # ZRODLO 
 *https://github.com/weibenfalk/React-RMDB/tree/master/src/components*
 *https://demo.productionready.io/#/*
-**TORRENT: "React Hooks - Building Real Project From Scratch"**
+>**TORRENT: "React Hooks - Building Real Project From Scratch"**
 
 
 # Zawartość
