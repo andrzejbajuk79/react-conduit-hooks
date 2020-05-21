@@ -1,12 +1,15 @@
+## DEPLOY
 
-# ZRODLO 
+> *https://a-bajuk-conduict-app.netlify.app*
+
+## ZRODLO 
 *https://github.com/weibenfalk/React-RMDB/tree/master/src/components*
 
 *https://demo.productionready.io/#/*
 >**TORRENT: "React Hooks - Building Real Project From Scratch"**
 
 
-# Zawartość
+## Zawartość
  -pagination.js ,  getPaginator.js
  
  - **classNames**
